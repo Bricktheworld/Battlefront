@@ -9,6 +9,7 @@ public class NetworkClient : SocketIOComponent
     [SerializeField] private GameObject prefabPlayer;
     [SerializeField] private GameObject LobbyCamera;
     [SerializeField] private GameObject PlayerHolder;
+    [SerializeField] private LoginScreenButtons LoginManager;
 
     [Header("Debugging Values")]
     private Dictionary<string, PlayerController> playerGameobjects = new Dictionary<string, PlayerController>();
@@ -84,6 +85,22 @@ public class NetworkClient : SocketIOComponent
             controller.updatePosition(updatedPosition, updatedRotation);
             
         });
+
+        On("loginSuccess", (e) => {
+            Debug.Log("logged in successfully");
+        });
+
+        On("loginFailed", (e) =>
+        {
+            Debug.Log("login failed");
+            LoginManager.failedToLogin();
+        });
+
+        On("accountCreatedSuccessfully", (e) =>
+        {
+            Debug.Log("created successfully");
+        });
+        
     }
 
     private GameObject createNewPlayer()
@@ -94,5 +111,35 @@ public class NetworkClient : SocketIOComponent
     public void tickUpdate(NetworkedClass player)
     {
         Emit("updatePositioning", new JSONObject(JsonUtility.ToJson(player)));
+    }
+
+    public void Login(string email, string password)
+    {
+        LoginPacket packet = new LoginPacket(email, password);
+        Emit("loginToServer", new JSONObject(JsonUtility.ToJson(packet)));
+    }
+
+    public void SignUp(string email, string username, string password)
+    {
+        LoginPacket packet = new LoginPacket(email, password);
+        packet.setUsername(username);
+        Emit("createAccount", new JSONObject(JsonUtility.ToJson(packet)));
+    }
+}
+
+public class LoginPacket
+{
+    public string email;
+    public string password;
+    public string username;
+    public LoginPacket(string inputEmail, string inputPassword)
+    {
+        email = inputEmail;
+        password = inputPassword;
+    }
+
+    public void setUsername(string inputUsername)
+    {
+        username = inputUsername;
     }
 }

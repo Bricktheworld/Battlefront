@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Main" style="flex-grow: 1; flex-direction: row; justify-content: center;">
+        <Style src="MainMenuUI.uss" />
+        <ui:VisualElement name="CenterColumn" style="justify-content: center; align-items: center;">
+            <ui:TextField picking-mode="Ignore" value="Test" name="Username" max-length="20" style="padding-top: 10px; padding-bottom: 10px; padding-right: 10px; padding-left: 10px; width: 208px; background-color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; background-image: none; display: flex;" />
+            <ui:Button text="Login" name="Login" class="Menu-Buttons" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

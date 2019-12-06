@@ -1,0 +1,45 @@
+{
+    "MonoBehaviour": {
+        "m_Enabled": true,
+        "m_EditorHideFlags": 0,
+        "m_Name": "BuilderDocument",
+        "m_EditorClassIdentifier": "",
+        "m_VisualTreeAssetBackup": {
+            "instanceID": 0
+        },
+        "m_OpenendMainStyleSheetOldPath": "Assets/MainMenuUI.uss",
+        "m_MainStyleSheetBackup": {
+            "instanceID": 0
+        },
+        "m_VisualTreeAsset": {
+            "fileID": 9197481963319205126,
+            "guid": "eefff7d0e75cc334c91d7d1285c67e7d",
+            "type": 3
+        },
+        "m_MainStyleSheet": {
+            "fileID": 7433441132597879392,
+            "guid": "7e8d51a4550ca1e4c9f7f60b7aca3b86",
+            "type": 3
+        },
+        "m_CurrentCanvasTheme": 3,
+        "m_Settings": {
+            "UxmlGuid": "eefff7d0e75cc334c91d7d1285c67e7d",
+            "UxmlPath": "Assets/MainMenuUI.uxml",
+            "CanvasWidth": 704,
+            "CanvasHeight": 824,
+            "CanvasBackgroundOpacity": 1.0,
+            "CanvasBackgroundMode": 3,
+            "CanvasBackgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 255.0
+            },
+            "CanvasBackgroundImage": {
+                "instanceID": 0
+            },
+            "CanvasBackgroundImageScaleMode": 1,
+            "CanvasBackgroundCameraName": "LobbyCamera"
+        }
+    }
+}

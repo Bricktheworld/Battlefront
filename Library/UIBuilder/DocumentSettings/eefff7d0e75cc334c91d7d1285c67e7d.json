@@ -1,0 +1,19 @@
+{
+    "UxmlGuid": "eefff7d0e75cc334c91d7d1285c67e7d",
+    "UxmlPath": "Assets/MainMenuUI.uxml",
+    "CanvasWidth": 704,
+    "CanvasHeight": 824,
+    "CanvasBackgroundOpacity": 1.0,
+    "CanvasBackgroundMode": 3,
+    "CanvasBackgroundColor": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 255.0
+    },
+    "CanvasBackgroundImage": {
+        "instanceID": 0
+    },
+    "CanvasBackgroundImageScaleMode": 1,
+    "CanvasBackgroundCameraName": "LobbyCamera"
+}

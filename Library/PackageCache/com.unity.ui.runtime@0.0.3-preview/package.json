@@ -1,0 +1,34 @@
+{
+  "name": "com.unity.ui.runtime",
+  "displayName": "UIElements Runtime",
+  "version": "0.0.3-preview",
+  "unity": "2019.3",
+  "description": "UIElements is a retained-mode UI toolkit for developing user interfaces in Unity. UIElements is based on recognized web technologies and supports stylesheets, dynamic and contextual event handling, and data persistence.\nThis package provides GameObject components that enable UIElements to be used in games.",
+  "keywords": [
+    "uielements",
+    "ui"
+  ],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.cds.internal.unity3d.com:unity/com.unity.ui.runtime.git",
+    "revision": "f65ed66af69d5f84b3eb80ec9c15cde052f0eef0"
+  },
+  "samples": [
+    {
+      "displayName": "Repeat Game",
+      "description": "A simple repeat-the-sequence game that support touch interaction.",
+      "path": "Samples~/RepeatGame"
+    },
+    {
+      "displayName": "Task List",
+      "description": "A simple todo list.",
+      "path": "Samples~/TaskList"
+    },
+    {
+      "displayName": "Touch Move",
+      "description": "Move squares with your fingers. Supports multi-touch.",
+      "path": "Samples~/TouchMove"
+    }
+  ]
+}
